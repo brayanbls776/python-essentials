@@ -1,4 +1,3 @@
-#crear una calculadora
 def suma(a, b):return a + b        
 def resta(a, b):return a - b
 def multiplicacion(a, b):return a * b
@@ -19,6 +18,7 @@ def calculadora():
     }
     print("Bienvenido a la calculadora")
     while True:
+        
         print("Seleccione una operación:")
         print("1. Suma")
         print("2. Resta")
@@ -34,8 +34,8 @@ def calculadora():
         
         if opcion in opciones:
             try:
-                num1 = obtener_numero("Ingrese el primer número: ")
-                num2 = obtener_numero("Ingrese el segundo número: ")
+                num1 = obtener_numero("👉Ingrese el primer número: ")
+                num2 = obtener_numero("👉Ingrese el segundo número: ")
                 
                 func, operador = opciones[opcion]
                 resultado = func(num1, num2)
@@ -44,7 +44,7 @@ def calculadora():
                 print("Error: Por favor ingrese un número válido.")
 
         else:
-            print("Opción no válida. Por favor seleccione una opción del 1 al 5.")  
+            print("❌Opción no válida. Por favor seleccione una opción del 1 al 5.")  
 
 if __name__ == "__main__":
     calculadora()
